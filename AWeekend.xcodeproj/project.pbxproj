@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1D6C301C3A767200CE8F03 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */; };
+		7A1D6C311C3A767200CE8F03 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */; };
 		7A91C61D1C3A286500809390 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C61C1C3A286500809390 /* main.m */; };
 		7A91C6201C3A286500809390 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C61F1C3A286500809390 /* AppDelegate.m */; };
 		7A91C6221C3A286500809390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C6211C3A286500809390 /* Assets.xcassets */; };
@@ -14,13 +16,16 @@
 		7A91C6481C3A4E3800809390 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C6391C3A4E3800809390 /* DiscoverViewController.m */; };
 		7A91C6491C3A4E3800809390 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C63F1C3A4E3800809390 /* MainViewController.m */; };
 		7A91C64A1C3A4E3800809390 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C6461C3A4E3800809390 /* MyViewController.m */; };
-		7A91C64E1C3A506700809390 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C64D1C3A506700809390 /* MainStoryboard.storyboard */; };
-		7A91C6501C3A508700809390 /* DiscoverStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C64F1C3A508700809390 /* DiscoverStoryboard.storyboard */; };
-		7A91C6521C3A50C200809390 /* MyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C6511C3A50C200809390 /* MyStoryboard.storyboard */; };
+		7A91C64E1C3A506700809390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C64D1C3A506700809390 /* Main.storyboard */; };
+		7A91C6501C3A508700809390 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C64F1C3A508700809390 /* Discover.storyboard */; };
+		7A91C6521C3A50C200809390 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C6511C3A50C200809390 /* My.storyboard */; };
 		972BC9AAD307B0E0F9938D0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7FD6A11BBBBFC265F659C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A1D6C2D1C3A767200CE8F03 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		7A91C6181C3A286400809390 /* AWeekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWeekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A91C61C1C3A286500809390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A91C61E1C3A286500809390 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -34,9 +39,9 @@
 		7A91C63F1C3A4E3800809390 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7A91C6451C3A4E3800809390 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		7A91C6461C3A4E3800809390 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		7A91C64D1C3A506700809390 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		7A91C64F1C3A508700809390 /* DiscoverStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiscoverStoryboard.storyboard; sourceTree = "<group>"; };
-		7A91C6511C3A50C200809390 /* MyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyStoryboard.storyboard; path = ../../Discover/View/MyStoryboard.storyboard; sourceTree = "<group>"; };
+		7A91C64D1C3A506700809390 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7A91C64F1C3A508700809390 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		7A91C6511C3A50C200809390 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = My.storyboard; path = ../../Discover/View/My.storyboard; sourceTree = "<group>"; };
 		7DC0EE795D49C3C7070FBEB1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AD7FD6A11BBBBFC265F659C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC0105F940D9DB9284466DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +156,7 @@
 		7A91C63B1C3A4E3800809390 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7A91C64F1C3A508700809390 /* DiscoverStoryboard.storyboard */,
+				7A91C64F1C3A508700809390 /* Discover.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +167,9 @@
 				7A91C63D1C3A4E3800809390 /* Coller */,
 				7A91C63E1C3A4E3800809390 /* MainViewController.h */,
 				7A91C63F1C3A4E3800809390 /* MainViewController.m */,
+				7A1D6C2D1C3A767200CE8F03 /* MainTableViewCell.h */,
+				7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */,
+				7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */,
 				7A91C6401C3A4E3800809390 /* Model */,
 				7A91C6411C3A4E3800809390 /* View */,
 			);
@@ -185,7 +193,7 @@
 		7A91C6411C3A4E3800809390 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7A91C64D1C3A506700809390 /* MainStoryboard.storyboard */,
+				7A91C64D1C3A506700809390 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,7 +227,7 @@
 		7A91C6471C3A4E3800809390 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7A91C6511C3A50C200809390 /* MyStoryboard.storyboard */,
+				7A91C6511C3A50C200809390 /* My.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,9 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A91C6501C3A508700809390 /* DiscoverStoryboard.storyboard in Resources */,
-				7A91C6521C3A50C200809390 /* MyStoryboard.storyboard in Resources */,
-				7A91C64E1C3A506700809390 /* MainStoryboard.storyboard in Resources */,
+				7A1D6C311C3A767200CE8F03 /* MainTableViewCell.xib in Resources */,
+				7A91C6501C3A508700809390 /* Discover.storyboard in Resources */,
+				7A91C6521C3A50C200809390 /* My.storyboard in Resources */,
+				7A91C64E1C3A506700809390 /* Main.storyboard in Resources */,
 				7A91C6221C3A286500809390 /* Assets.xcassets in Resources */,
 				7A91C6251C3A286500809390 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -363,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1D6C301C3A767200CE8F03 /* MainTableViewCell.m in Sources */,
 				7A91C6201C3A286500809390 /* AppDelegate.m in Sources */,
 				7A91C6481C3A4E3800809390 /* DiscoverViewController.m in Sources */,
 				7A91C61D1C3A286500809390 /* main.m in Sources */,
@@ -471,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AWeekend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiao.AWeekend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AWeekend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiao.AWeekend;
 				PRODUCT_NAME = "$(TARGET_NAME)";

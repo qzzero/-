@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainViewController.h"
+#import "DiscoverViewController.h"
+#import "MyViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,56 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //UITabBarController
+    
+    UITabBarController *tabBarvc = [[UITabBarController alloc] init];
+    //创建被tabBarvc管理的视图控制器
+    
+    //主页
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *mainnav = mainStoryboard.instantiateInitialViewController;
+    mainnav.tabBarItem.image = [UIImage imageNamed:@"ft_home_normal_ic"];
+    mainnav.tabBarItem.selectedImage = [UIImage imageNamed:@"ft_home_selected_ic"];
+    
+    //调整tabBar位置，按照上左下右的顺序
+    mainnav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    
+    /*
+    UIImage *mainselectimage = [UIImage imageNamed:@"ft_home_selected_ic"];
+    //tabbar设置选中图片按照图片原始状态显示
+    mainnav.tabBarItem.selectedImage = [mainselectimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    下同，这个是在StoryBoars里设置过，所以将代码注销
+    */
+    
+    
+    //发现
+    UIStoryboard *DisStoryboard = [UIStoryboard storyboardWithName:@"Discover" bundle:nil];
+    UINavigationController *Disnav = DisStoryboard.instantiateInitialViewController;
+    Disnav.tabBarItem.image = [UIImage imageNamed:@"ft_found_normal_ic"];
+    Disnav.tabBarItem.selectedImage = [UIImage imageNamed:@"ft_found_selected_ic"];
+    
+    //调整tabBar位置，按照上左下右的顺序
+    mainnav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    
+    //我的
+    UIStoryboard *MyStoryboard = [UIStoryboard storyboardWithName:@"My" bundle:nil];
+    UINavigationController *Mynav = MyStoryboard.instantiateInitialViewController;
+    Mynav.tabBarItem.image = [UIImage imageNamed:@"ft_person_normal_ic"];
+    Mynav.tabBarItem.selectedImage = [UIImage imageNamed:@"ft_person_selected_ic"];
+    
+    //调整tabBar位置，按照上左下右的顺序
+    mainnav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+    
+    
+    //添加被管理的试图控制器
+    tabBarvc.viewControllers = @[mainnav,Disnav,Mynav];
+    tabBarvc.tabBar.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = tabBarvc;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
