@@ -33,7 +33,7 @@
                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清仓大甩卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-fi-B0X">
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清仓大甩卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-fi-B0X">
                         <rect key="frame" x="18" y="139" width="144" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -47,7 +47,7 @@
                 <outlet property="ActivityName" destination="GLd-fi-B0X" id="qLb-GZ-AgN"/>
                 <outlet property="Activityimage" destination="IyD-dv-Ygl" id="pXD-Ze-YFI"/>
             </connections>
-            <point key="canvasLocation" x="649.5" y="422"/>
+            <point key="canvasLocation" x="946.5" y="585"/>
         </tableViewCell>
     </objects>
 </document>
