@@ -14,6 +14,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-dv-Ygl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="￥99999999999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-Lh-xeR">
                         <rect key="frame" x="-5" y="168" width="191" height="27"/>
                         <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,14 +33,18 @@
                             <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-dv-Ygl">
-                        <rect key="frame" x="-5" y="0.0" width="375" height="168"/>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清仓大甩卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-fi-B0X">
+                        <rect key="frame" x="18" y="139" width="144" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="ActivityButton" destination="YkA-RG-L1m" id="qHD-MY-OXe"/>
                 <outlet property="ActivityLable" destination="pmt-Lh-xeR" id="fyc-Jr-KwR"/>
+                <outlet property="ActivityName" destination="GLd-fi-B0X" id="qLb-GZ-AgN"/>
                 <outlet property="Activityimage" destination="IyD-dv-Ygl" id="pXD-Ze-YFI"/>
             </connections>
             <point key="canvasLocation" x="649.5" y="422"/>

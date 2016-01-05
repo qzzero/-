@@ -1,0 +1,5 @@
+sessionManager GET:Urlstr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+NSLog(@"%@",downloadProgress.totalUnitCount);
+} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+<#code#>
+} failure:<#^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)failure#>

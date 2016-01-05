@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7A1D6C301C3A767200CE8F03 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */; };
 		7A1D6C311C3A767200CE8F03 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */; };
+		7A25EC981C3B9DE600F1F341 /* Filehg in Resources */ = {isa = PBXBuildFile; fileRef = 7A25EC971C3B9DE600F1F341 /* Filehg */; };
+		7A25EC9B1C3BA07400F1F341 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A25EC9A1C3BA07400F1F341 /* MainModel.m */; };
+		7A25EC9D1C3BBAAC00F1F341 /* 暂存 in Resources */ = {isa = PBXBuildFile; fileRef = 7A25EC9C1C3BBAAC00F1F341 /* 暂存 */; };
 		7A91C61D1C3A286500809390 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C61C1C3A286500809390 /* main.m */; };
 		7A91C6201C3A286500809390 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A91C61F1C3A286500809390 /* AppDelegate.m */; };
 		7A91C6221C3A286500809390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A91C6211C3A286500809390 /* Assets.xcassets */; };
@@ -26,6 +29,10 @@
 		7A1D6C2D1C3A767200CE8F03 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		7A25EC971C3B9DE600F1F341 /* Filehg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Filehg; sourceTree = "<group>"; };
+		7A25EC991C3BA07400F1F341 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		7A25EC9A1C3BA07400F1F341 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		7A25EC9C1C3BBAAC00F1F341 /* 暂存 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "暂存"; sourceTree = "<group>"; };
 		7A91C6181C3A286400809390 /* AWeekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWeekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A91C61C1C3A286500809390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A91C61E1C3A286500809390 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +174,7 @@
 				7A91C63D1C3A4E3800809390 /* Coller */,
 				7A91C63E1C3A4E3800809390 /* MainViewController.h */,
 				7A91C63F1C3A4E3800809390 /* MainViewController.m */,
+				7A25EC9C1C3BBAAC00F1F341 /* 暂存 */,
 				7A1D6C2D1C3A767200CE8F03 /* MainTableViewCell.h */,
 				7A1D6C2E1C3A767200CE8F03 /* MainTableViewCell.m */,
 				7A1D6C2F1C3A767200CE8F03 /* MainTableViewCell.xib */,
@@ -186,6 +194,9 @@
 		7A91C6401C3A4E3800809390 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7A25EC971C3B9DE600F1F341 /* Filehg */,
+				7A25EC991C3BA07400F1F341 /* MainModel.h */,
+				7A25EC9A1C3BA07400F1F341 /* MainModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,8 +323,10 @@
 				7A91C6501C3A508700809390 /* Discover.storyboard in Resources */,
 				7A91C6521C3A50C200809390 /* My.storyboard in Resources */,
 				7A91C64E1C3A506700809390 /* Main.storyboard in Resources */,
+				7A25EC9D1C3BBAAC00F1F341 /* 暂存 in Resources */,
 				7A91C6221C3A286500809390 /* Assets.xcassets in Resources */,
 				7A91C6251C3A286500809390 /* LaunchScreen.storyboard in Resources */,
+				7A25EC981C3B9DE600F1F341 /* Filehg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +391,7 @@
 				7A91C61D1C3A286500809390 /* main.m in Sources */,
 				7A91C6491C3A4E3800809390 /* MainViewController.m in Sources */,
 				7A91C64A1C3A4E3800809390 /* MyViewController.m in Sources */,
+				7A25EC9B1C3BA07400F1F341 /* MainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
