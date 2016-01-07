@@ -36,13 +36,19 @@
     
 }
 //在model的set方法中赋值
-- (void)setMainmodel:(MainModel *)mainmodel{
-    [self.Activityimage sd_setImageWithURL:[NSURL URLWithString:mainmodel.image_big]placeholderImage:nil];
-    self.ActivityLable.text = mainmodel.title;
-    self.ActivityName.text = mainmodel.price;
-
-
+-(void)setMainModel:(MainModel *)mainModel{
+    [self.Activityimage sd_setImageWithURL:[NSURL URLWithString:mainModel.image_big ] placeholderImage:nil];
+    
+    self.ActivityName.text = mainModel.title;
+    self.ActivityLable.text = mainModel.price;
+//    if ([mainModel.type integerValue] != ) {
+//        self.ActivityButton.hidden = YES;
+//    }else{
+//        self.ActivityButton.hidden = NO;
+//    }
 }
+
+
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

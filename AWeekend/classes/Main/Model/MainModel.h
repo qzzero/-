@@ -9,37 +9,27 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef enum {
 
-    RecommendTypeActivity = 1,//推荐活动
-    RecommendTypeTheme//推荐专题
-
-
-}RecommendType;
 
 
 @interface MainModel : NSObject
 
-//首页大图
-@property(nonatomic, copy)NSString *image_big;
-//标题
-@property(nonatomic, copy)NSString *title;
-//价格
-@property(nonatomic, copy)NSString *price;
+@property(nonatomic,retain) NSString *address;//地址
+@property(nonatomic,retain) NSString *image_big;//图片
+@property(nonatomic,retain) NSString *title;
+@property(nonatomic,retain) NSString *price;
+@property(nonatomic,assign) CGFloat  lat;//维度
+@property(nonatomic,assign) CGFloat  lng;//经度
 
-//经纬度
-@property(nonatomic, assign)CGFloat lat;
-@property(nonatomic, assign)CGFloat lng;
+@property(nonatomic,retain) NSString *counts;
+@property(nonatomic,retain) NSString *startTime;
+@property(nonatomic,retain) NSString *endTime;
+@property(nonatomic,retain) NSString *activityId;
+@property(nonatomic,retain) NSString *type;
 
-@property(nonatomic, copy)NSString *address;
-@property(nonatomic, copy)NSString *counts;
-@property(nonatomic, copy)NSString *startTime;
-@property(nonatomic, copy)NSString *endTime;
-@property(nonatomic, copy)NSString *type;
+@property(nonatomic,retain) NSString *activityDescription;
 
-@property(nonatomic, copy)NSString *activityId;
 
-@property(nonatomic, copy)NSString *activityDescription;
 
 //定义一个公开的方法把外部的字典传进来进行转化加工（字典转化成model）
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

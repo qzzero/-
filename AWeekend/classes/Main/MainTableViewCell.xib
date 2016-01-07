@@ -7,11 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="204" id="KGk-i7-Jjw" customClass="MainTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="226" id="KGk-i7-Jjw" customClass="MainTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="226"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                <rect key="frame" x="0.0" y="0.0" width="393" height="225"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-dv-Ygl">
@@ -27,18 +27,19 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-RG-L1m">
-                        <rect key="frame" x="219" y="170" width="156" height="30"/>
-                        <state key="normal" title="按钮">
-                            <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清仓大甩卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-fi-B0X">
                         <rect key="frame" x="18" y="139" width="144" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-RG-L1m">
+                        <rect key="frame" x="273" y="172" width="69" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="   按钮" image="pos">
+                            <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -47,7 +48,10 @@
                 <outlet property="ActivityName" destination="GLd-fi-B0X" id="qLb-GZ-AgN"/>
                 <outlet property="Activityimage" destination="IyD-dv-Ygl" id="pXD-Ze-YFI"/>
             </connections>
-            <point key="canvasLocation" x="946.5" y="585"/>
+            <point key="canvasLocation" x="1212.5" y="619"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="pos" width="12" height="15"/>
+    </resources>
 </document>
